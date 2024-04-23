@@ -18,10 +18,12 @@ export const LoginSignup = () => {
 
     
   return (
-    <>  
+    <>   <div className='body'>
+    <div ><NavDemo></NavDemo></div>
     
-    <div  ><NavDemo /></div>
-    <div>
+
+   
+   <div>
     <Form className='container'>
         <div className='text'>Login</div>
       <Form.Group className="emale" controlId="formBasicEmail">
@@ -40,7 +42,7 @@ export const LoginSignup = () => {
         <Form.Check type="checkbox" label="Check me out" />
       </Form.Group>
       <div className='buttonlogin'>
-        <Button className='button1' type="submit"  >
+        <Button className='button1' type="submit" >
         Log in
       </Button>
       <Button  className='button2' type="submit" onClick={changeReg}>
@@ -50,7 +52,7 @@ export const LoginSignup = () => {
     </Form>
 
     </div>
-    
+    </div>
     <div><Footer></Footer></div>
     </>
   );

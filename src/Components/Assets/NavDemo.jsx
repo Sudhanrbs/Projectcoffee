@@ -13,7 +13,7 @@ export const NavDemo = () => {
 
     <Navbar expand="lg"  className="nav">
          
-        <Navbar.Brand className='index' href="/"> 
+        <Navbar.Brand className='index' href="/table"> 
         <img className='logo' src="starbuks01.png" alt="Logo" fetchpriority="high" class="logo"></img>MoonBucks
         </Navbar.Brand>
         <Navbar.Brand className='index' href="/"> 
@@ -22,7 +22,7 @@ export const NavDemo = () => {
         <Navbar.Brand className='index' href="/login"> 
         Order
         </Navbar.Brand>
-        <Navbar.Brand className='index' href="#home"> 
+        <Navbar.Brand className='index' href="/about"> 
         About
         </Navbar.Brand>
         <Navbar.Toggle className='toggle' aria-controls="basic-navbar-nav" />

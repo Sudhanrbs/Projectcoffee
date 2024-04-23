@@ -47,6 +47,15 @@
     margin-top: 60px;
   
 }
+.buttonreg{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    
+  
+}
 .button1{
     width: 200px;
     color: rgb(241, 237, 245);
@@ -62,6 +71,21 @@
     margin-left: 20px;
     border: green;
 }
+.buttonreg1{
+    width: 200px;
+    color: rgb(241, 237, 245);
+    background-color:  rgba(19, 104, 15, 0.932);
+    margin-right: 50px;
+    border: green;
+    
+}
+.buttonreg2{
+    width: 200px;
+    color: rgb(241, 237, 245);
+    background-color:  rgba(25, 104, 15, 0.932);
+    margin-left: 30px;
+    border: green;
+}
 .textuser{
     margin-top: 10px;
 }
@@ -70,6 +94,15 @@
   color: #157037;
 }
 .button2:hover{
+    background-color:aliceblue;
+    color: #076337;
+  }
+
+  .buttonreg1:hover{
+    background-color: aliceblue;
+  color: #157037;
+}
+.buttonreg2:hover{
     background-color:aliceblue;
     color: #076337;
   }

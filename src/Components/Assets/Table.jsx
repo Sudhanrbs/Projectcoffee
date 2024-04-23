@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import NavDemo from './NavDemo'
 import axios from 'axios'
 
-export const Table = () => {
+export default function Table() {
     const  [users,setUser]= useState([]);
 
    useEffect(()=>{
@@ -10,7 +10,8 @@ export const Table = () => {
    },[]);
 
    const loadusers=async()=>{
-    const result= await axios.get("http://localhost:8383/user/getuser")
+    const result= await axios.get("http://localhost:8383/user/getuser");
+    console.log(result.data);
     setUser(result.data);
    };
       
@@ -31,22 +32,25 @@ export const Table = () => {
   </thead>
   <tbody>
     {
-        users.map((User,index)=>{
-            <tr key={User}>
-            <th scope="row" ></th>
-            <td>{User.username}</td>
-            <td>{User.email}</td>
-            <td>{User.mobile}</td>
-            <td>{User.password}</td>
-          </tr>
-        })
-       
-    }
+       users.map((user,index)=>(
+        <tr>
+            <th scope='row' key={index}>{index+1}</th>
+            <th>{user.username}</th>
+            <th>{user.email}</th>
+            <th>{user.mobile}</th>
+            <th>{user.password}</th>
+        </tr>
+
+
+
+
+    ))}
+
 
   </tbody>
 </table>
 </>
   )
 }
-export default Table;
+
 
